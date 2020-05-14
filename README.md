@@ -1,10 +1,5 @@
 # Datasets
 
-## Datasets Overview
-
-We use three real datasets. The table below summarizes some characteristics of the datasets, including number of tuples, the number of attributes. 
-
-
 ## Pantheon Dataset
 This dataset is from [source](http://pantheon.media.mit.edu/rankings/people/all/all/-4000/2010/H15), which contains 11,341 individuals' information, based
 on the popularity of their biographical page in Wikipedia . 
