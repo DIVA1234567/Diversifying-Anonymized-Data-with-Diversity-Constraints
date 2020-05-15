@@ -1,0 +1,7 @@
+https://pypi.org/project/cn-protect/
+
+pip install cn-protect
+
+cn-protect 0.9.4
+
+https://docs.cryptonumerics.com/cn-protect-ds/?page=docs.cryptonumerics.com/cn-protect-ds-html/protect.html
