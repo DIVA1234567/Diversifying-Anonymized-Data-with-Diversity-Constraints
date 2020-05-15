@@ -2,7 +2,7 @@
 
 ## Pantheon Dataset
 This dataset is from [source](https://pantheon.world/explore/rankings?show=people), which contains 11,341 individuals' information, based
-on the popularity of their biographical page in Wikipedia . 
+on the popularity of their biographical page in Wikipedia. 
 
 | **Attribute Details**                                                                                                                                                                                                                                              |
 | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -25,7 +25,7 @@ on the popularity of their biographical page in Wikipedia .
 | historical_popularity_index: An index value measuring approximately the popularity                                                    |
 
 ## Census Dataset 
- The dataset contains 300K records with 40 attributes from the U.S. Census Bureau. This dataset can be found here [source](https://archive.ics.uci.edu/ml/machine-learning-databases/census-income-mld/census-income.html), containing population data.
+ The dataset contains 300K records with 40 attributes from the U.S. Census Bureau. This dataset can be found [here](https://archive.ics.uci.edu/ml/machine-learning-databases/census-income-mld/census-income.html), containing population data.
 
 | **Attribute Details** |
 | :------------------------------------------------ |
@@ -62,7 +62,6 @@ This dataset can be found here [source](https://archive.ics.uci.edu/ml/datasets/
 
 ## Diversity Constraints
 
-Constraints
 Given a diversity constraint, it has four components: attribute name, attribute value, the frequency of the attribute value (lower bound) and the frequency of the attribute value (lower bound). We denote in this format `attrName(attrValue)[lower bound, upper bound]`. For example, `city(New York) [100, 400]` means the attribute name is city, the attribute value New York. the lower bound 100 and upper bound 400.
 
 Diversity constraints examples:
@@ -89,8 +88,6 @@ occupation(Actor) [600, 1500]
 industry (Government) [1000, 2500]
 industry (Film And Theatre) [600, 1500]
 ```
-
-Diversity Constraints
 
 ### Diversity Constraints Defined on Pantheon
 
@@ -130,15 +127,6 @@ continent(Asia) [590, 590]
 continent(Africa) [208, 208]
 continent(South America) [181, 181]
 continent(Oceania) [61, 61]
-
-domain(Institutions) [1728, 1728]
-domain(Arts) [1433, 1433]
-domain(Sports) [887, 887]
-domain(Science & Technology) [688, 688]
-domain(Humanities) [664, 664]
-domain(Public Figure) [179, 179]
-domain(Business & Law) [54, 54]
-domain(Exploration) [51, 51]
 ```
 
 
@@ -193,9 +181,6 @@ sex(Female)race(Asian-Pac-Islander)[4548, 4548]
 sex(Female)race(Amer-Indian-Eskimo)[987, 987]
 sex(Female)race(Other)[754, 754]
 
-workclass(private)[184521, 234511]
-workclass(other)[64151, 64151]
-workclass(gov)[87451, 87451]
 ```
 
 ### Diversity Constraints Defined on Credit
@@ -206,23 +191,23 @@ Diversity constraints on attributes Sex and Job
 Minimum:
 
 Sex(Male) [1, 690]
-Sex(Female) [1, 310]
+Sex(Female) [1, 1]
 
-Job(2)[1, 630]
-Job(1)[1, 200]
-Job(3)[1, 148]
-Job(0)[1, 22]
+Job(skilled)[1, 630]
+Job(unskilled and resident)[1, 1]
+Job(high)[1, 1]
+Job(unskilled and non-resident)[1,1]
 
 
 Average:
 
 Sex(Male) [500, 690]
-Sex(Female) [310, 500]
+Sex(Female) [310, 310]
 
-Job(2)[250, 630]
-Job(1)[200, 200]
-Job(3)[148, 148]
-Job(0)[22, 22]
+Job(skilled)[250, 630]
+Job(unskilled and resident)[200, 200]
+Job(high)[148, 148]
+Job(unskilled and non-resident)[22, 22]
 
 
 Proportion
@@ -230,12 +215,12 @@ Proportion
 Sex(Male) [662, 690]
 Sex(Female) [298, 298]
 
-Job(2)[605, 605]
-Job(1)[192, 192]
-Job(3)[142, 142]
-Job(0)[21, 21]
+Job(skilled)[605, 605]
+Job(unskilled and resident)[192, 192]
+Job(high)[142, 142]
+Job(unskilled and non-resident)[21, 21]
 ```
 
 
 ## Source Code
-You can find Source Code of this paper [here](https://github.com/DIVA1234567/Diversifying-Anonymized-Data-with-Diversity-Constraints)
+The source code is available [here](https://github.com/DIVA1234567/Diversifying-Anonymized-Data-with-Diversity-Constraints).
