@@ -238,4 +238,4 @@ Job(0)[21, 21]
 
 
 ## Source Code
-You can find Source Code of this paper [here](https://bitbucket.org/YuHuangMac/diva/src/master/)
+You can find Source Code of this paper [here](https://github.com/DIVA1234567/Diversifying-Anonymized-Data-with-Diversity-Constraints)
